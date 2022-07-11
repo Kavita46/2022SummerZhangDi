@@ -1,14 +1,14 @@
-var express = require('express');
-var router = express.Router();
-const { getAcademys, } = require('../controller/academyController');
+// var express = require('express');
+// var router = express.Router();
+// const { getAcademys, } = require('../controller/academyController');
 
-// require('../controller/studentController');
+// // require('../controller/studentController');
 
-// 查询所有班级
-router.get('/getAcademys', getAcademys);
+// // 查询所有班级
+// router.get('/getAcademys', getAcademys);
 
-// router.post('/editClass', editClass)
+// // router.post('/editClass', editClass)
 
-// router.post('/addClass', addClass)
-module.exports = router;
+// // router.post('/addClass', addClass)
+// module.exports = router;
 

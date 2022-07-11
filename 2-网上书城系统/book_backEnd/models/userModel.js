@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
 userid:String,
 username:String,
+password:String,
 city:String,
 country:String,
 age:String,
 sex:String,
-password:String,
 role:String
 }, {
     // 避免产生无意义字段

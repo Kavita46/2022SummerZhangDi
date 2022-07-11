@@ -18,18 +18,10 @@ var allowCrossDomain = function (req, res, next) {
 // require了路由,一定会执行的代码
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var studentRouter = require('./routes/students');
-var classRouter = require('./routes/classes');
-var bannerRouter = require('./routes/banners')
-var scoreRouter = require('./routes/scores')
-var courseRouter = require('./routes/courses')
-var teacherRouter = require('./routes/teachers')
-var academyRouter = require('./routes/academy')
-var majorRouter = require('./routes/major')
-var examRouter = require('./routes/exam')
-// var scoreRouter = require('./routes/scores')
-// var bannerRouter = require('./routes/banners')
-// var scoreRouter = require('./routes/scores')
+// var studentRouter = require('./routes/students');
+var bookRouter = require('./routes/books')
+var orderRouter = require('./routes/orders')
+
 const jwt = require('express-jwt');
 
 const jwtAuth = require("./utils/jwtAuth.js");
@@ -58,16 +50,9 @@ app.use(allowCrossDomain);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/students', studentRouter);
-app.use('/classes', classRouter);
-app.use('/banners', bannerRouter);
-app.use('/scores', scoreRouter);
-app.use('/courses', courseRouter)
-app.use('/teachers', teacherRouter)
-app.use('/major', majorRouter)
-app.use('/academy', academyRouter)
-app.use('/exam', examRouter)
-// app.use('/scores', scoreRouter)
+app.use('/books', bookRouter)
+app.use('/orders', orderRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
