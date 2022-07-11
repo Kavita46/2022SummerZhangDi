@@ -1,0 +1,5 @@
+weblog_analysis是购书转化率分析的java部分的代码，输入为clickstream_log表中的内容。
+
+weblog_analysis_python是与java代码联合运行的python代码，结果输出到conversion_result表。
+
+详细的readme在各项目文件夹内。

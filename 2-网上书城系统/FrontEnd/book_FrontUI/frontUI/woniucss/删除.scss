@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#shanchu{
+    color: black;
+    text-decoration: underline;
+    border: 0;
+    background-color: white;
+    :focus{
+        border: 0;
+    }
+}
+.modal-header{
+    border: 0;
+    height: 100px;
+    // width: 300px;
+    position: relative;
+    .close{
+        color: red;
+        opacity: 1;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        // position: absolute;
+        margin-right: 40px;
+        border-radius: 4px;
+    }
+}
+.modal-footer{
+    position: relative;
+    border: 0;
+    height: 200px;
+    // width: 300px;
+    #queding{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        position: absolute;
+        left: 40px;
+        bottom: 10px;
+    }
+    #quxiao{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        position: absolute;
+        right: 40px;
+        bottom: 10px;
+    }
+}

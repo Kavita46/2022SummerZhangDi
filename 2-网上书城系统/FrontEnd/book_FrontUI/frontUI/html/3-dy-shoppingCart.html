@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+ <link rel="stylesheet" href="../woniucss/shop.css">
+ <link rel="stylesheet" href="../woniucss/header-2.css">
+ <link rel="stylesheet" href="../woniucss/删除.scss">
+ <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+
+</head>
+ <body>
+
+    
+    <!-- 中间内容 -->
+    <div class="header">
+        <div class="h-module1">
+            <div class="left-logo"></div>
+            <div class="right-login">
+                <div class="login-a">
+                    <a href="../1-zh-login.html">登录</a>
+                    <div class="vline"></div>
+                    <a href="../1-zh-register.html">注册</a>
+                </div>
+                <input type="text" placeholder="热门搜索：小王子" maxlength="16">
+                <a href="../4-userCenter-myCenter.html" class="user"></a>
+                <a href="" class="QRcode"></a>
+                <a href="3-dy-shoppingCart.html" class="shopping-card"></a>
+            </div>
+        </div>
+        <div class="h-module2">
+            <div class="list-nav">
+                <ul>
+                    <li>
+                        <a href="../2-index.html" class="achange">首页</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="../2-index.html" class="achange">所有图书</a>
+                        <div class="line"></div>
+
+                    </li>
+                    <li>
+                        <a href="../2-bottles.html" class="achange">教育</a>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <a href="" class="achange">小说</a>
+                        <div class="line"></div>
+                        <div class="sub_nav"></div>
+                    </li>
+                    <li>
+                        <a href="" class="achange">文艺</a>
+                        <div class="line"></div>
+                        <div class="sub_nav"></div>
+                    </li>
+                    <li>
+                        <a href="" class="achange">童书</a>
+                        <div class="line"></div>
+                        <div class="sub_nav"></div>
+                    </li>
+                    <li>
+                        <a href="" class="achange">人文社科</a>
+                        <div class="line"></div>
+                        <div class="sub_nav"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="content">
+   <div class="sphead">
+    <div class="spheadbox">
+        <div class="sphead-w1">购物车</div>
+        <div class="sphead-img1 percentage">
+           
+            <img src="../img/img/temp/cartTop01.jpg" alt="">
+        </div>
+       <a href="../2-index.html"> <div class="sphead-w2">继续购物></div></a>
+    </div>
+   </div>
+   <div class="spnav">
+       <ul>
+           <li>商品</li>
+           <li>单价</li>
+           <li>数量</li>
+           <li>小计</li>
+           <li>操作</li>
+       </ul>
+   </div>
+   <div class="spcontainer">
+       <div class="box1"></div>
+       <div class="box2 percentage">
+        <a href = "../html/2-details-page1.html">
+           <img src="../imgs/s111.jpg" alt="">
+           </a>
+       </div>
+       <div class="box3">
+           <ul>
+               <li>《少年读史记》</li>
+
+           </ul>
+       </div>
+       <div class="box4">￥20.00</div>
+       <div class="box5">
+           <div class="box5-img percentage">
+            
+               <img src="../img/img/temp/sub.jpg" alt="">
+              
+           </div>
+           <span>1</span>
+           <div class="box5-img percentage left">
+            
+            <img src="../img/img/temp/add.jpg" alt="">
+          
+
+        </div>
+       </div>
+    
+   
+       <div class="box6" ><a href=""></a>
+        
+        <button  id="shanchu" data-toggle="modal" data-target="#myModal">
+            删除
+        </button>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            取消
+                        </button> -->
+                        <h4 class="modal-title" id="myModalLabel">
+                            确定要删除该商品吗
+                        </h4>
+                    </div>
+                    <!-- <div class="modal-body">
+                        在这里添加一些文本
+                    </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+                        确定
+                        </button>
+                        <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                           取消
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary">
+                            取消
+                        </button> -->
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+            </div>
+        
+        </div>
+   <div class="spcontainer">
+    <div class="box1"></div>
+    <div class="box2 percentage">
+        <a href = "../html/2-details-page1.html">
+        <img src="../imgs/s111.jpg" alt="">
+        </a>
+    </div>
+    <div class="box3">
+        <ul>
+            <li>《少年读史记》</li>
+
+        </ul>
+    </div>
+    <div class="box4">￥20.00</div>
+    <div class="box5">
+        <div class="box5-img percentage">
+            <img src="../img/img/temp/sub.jpg" alt="">
+        </div>
+        <span>1</span>
+        <div class="box5-img percentage left">
+         <img src="../img/img/temp/add.jpg" alt="">
+     </div>
+    </div>
+ 
+  
+    <div class="box6" ><a href=""></a>
+        
+        <button  id="shanchu" data-toggle="modal" data-target="#myModal">
+            删除
+        </button>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            取消
+                        </button> -->
+                        <h4 class="modal-title" id="myModalLabel">
+                            确定要删除该商品吗
+                        </h4>
+                    </div>
+                    <!-- <div class="modal-body">
+                        在这里添加一些文本
+                    </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+                        确定
+                        </button>
+                        <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                           取消
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary">
+                            取消
+                        </button> -->
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+            </div>
+        
+        </div>
+<div class="spcontainer">
+    <div class="box1"></div>
+    <div class="box2 percentage">
+        <a href = "../html/2-details-page1.html">
+        <img src="../imgs/s111.jpg" alt="">
+        </a>
+    </div>
+    <div class="box3">
+        <ul>
+            <li>《少年读史记》</li>
+
+        </ul>
+    </div>
+    <div class="box4">￥20.00</div>
+    <div class="box5">
+        <div class="box5-img percentage">
+            <img src="../img/img/temp/sub.jpg" alt="">
+        </div>
+        <span>1</span>
+        <div class="box5-img percentage left">
+         <img src="../img/img/temp/add.jpg" alt="">
+     </div>
+    </div>
+ 
+    <div class="box6" ><a href=""></a>
+        
+<button  id="shanchu" data-toggle="modal" data-target="#myModal">
+	删除
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					取消
+				</button> -->
+				<h4 class="modal-title" id="myModalLabel">
+					确定要删除该商品吗
+				</h4>
+			</div>
+			<!-- <div class="modal-body">
+				在这里添加一些文本
+			</div> -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+				确定
+                </button>
+                <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                   取消
+                </button>
+				<!-- <button type="button" class="btn btn-primary">
+					取消
+				</button> -->
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+    </div>
+
+</div>
+<div class="spcontainer">
+    <div class="box1"></div>
+    <div class="box2 percentage">
+        <a href = "../html/2-details-page1.html">
+        <img src="../imgs/s111.jpg" alt="">
+        </a>
+    </div>
+    <div class="box3">
+        <ul>
+            <li>《少年读史记》</li>
+        </ul>
+    </div>
+    <div class="box4">￥20.00</div>
+    <div class="box5">
+        <div class="box5-img percentage">
+            <img src="../img/img/temp/sub.jpg" alt="">
+        </div>
+        <span>1</span>
+        <div class="box5-img percentage left">
+         <img src="../img/img/temp/add.jpg" alt="">
+     </div>
+    </div>
+    <div class="box6" ><a href=""></a>
+        
+        <button  id="shanchu" data-toggle="modal" data-target="#myModal">
+            删除
+        </button>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            取消
+                        </button> -->
+                        <h4 class="modal-title" id="myModalLabel">
+                            确定要删除该商品吗
+                        </h4>
+                    </div>
+                    <!-- <div class="modal-body">
+                        在这里添加一些文本
+                    </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+                        确定
+                        </button>
+                        <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                           取消
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary">
+                            取消
+                        </button> -->
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+            </div>
+
+</div>
+<div class="spcontainer">
+    <div class="box1"></div>
+    <div class="box2 percentage">
+        <a href = "../html/2-details-page1.html">
+        <img src="../imgs/s111.jpg" alt="">
+        </a>
+    </div>
+    <div class="box3">
+        <ul>
+            <li>少年读史记</li>
+
+        </ul>
+    </div>
+    <div class="box4">￥20.00</div>
+    <div class="box5">
+        <div class="box5-img percentage">
+            <img src="../img/img/temp/sub.jpg" alt="">
+        </div>
+        <span>1</span>
+        <div class="box5-img percentage left">
+         <img src="../img/img/temp/add.jpg" alt="">
+     </div>
+    </div>
+ 
+    <div class="box6" ><a href=""></a>
+        
+        <button  id="shanchu" data-toggle="modal" data-target="#myModal">
+            删除
+        </button>
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            取消
+                        </button> -->
+                        <h4 class="modal-title" id="myModalLabel">
+                            确定要删除该商品吗
+                        </h4>
+                    </div>
+                    <!-- <div class="modal-body">
+                        在这里添加一些文本
+                    </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+                        确定
+                        </button>
+                        <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                           取消
+                        </button>
+                        <!-- <button type="button" class="btn btn-primary">
+                            取消
+                        </button> -->
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+            </div>
+
+</div>
+<div class="spnav2">
+    <ul>
+        <li>
+            <div class="box1"></div>
+            <span>全选</span>
+        </li>
+        <li>删除</li>
+        <li>共计<span1 style="color: red;">0</span1>件商品</li>
+        <li>合计：￥0.00</li>
+        <!-- to do加链接 -->
+        <li style="height: 30px; line-height: 30px;"> <a  href="3-kgl-orderConfirm.html" style="color: black;">结算</a></li>
+    </ul>
+</div>
+</div>
+
+
+</body>
+</html>

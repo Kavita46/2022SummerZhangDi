@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地址管理</title>
+    <link rel="stylesheet" href="css/public2.css">
+    <link rel="stylesheet" href="css/perInduceFour.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+
+    <header>
+        <div class="header-box">
+            <div class="header">
+                <div class="h-module1">
+                    <div class="left-logo"></div>
+                    <div class="right-login">
+                        <div class="login-a">
+                            <a href="1-zh-login.html">登录</a>
+                            <div class="vline"></div>
+                            <a href="1-zh-register.html">注册</a>
+                        </div>
+                        <input type="text" placeholder="热门搜索：小王子" maxlength="16">
+                        <a href="4-userCenter-myCenter.html" class="user"></a>
+                        <a href="" class="QRcode">
+                            <div class="QRcode-img"></div>
+                        </a>
+                        <a href="./html/3-dy-shoppingCart.html" class="shopping-card"></a>
+                    </div>
+                </div>
+                <div class="h-module2">
+                    <div class="list-nav">
+                        <ul>
+                            <li>
+                                <a href="2-index.html" class="achange">首页</a>
+                                <div class="line"></div>
+                            </li>
+                            <li>
+                                <a href="2-bottles.html" class="achange">所有图书</a>
+                                <div class="line"></div>
+
+                            </li>
+                            <li>
+                                <a href="2-bottles.html" class="achange">教育</a>
+                                <div class="line"></div>
+
+                            </li>
+                            <li>
+                                <a href="" class="achange">小说</a>
+                                <div class="line"></div>
+                                <div class="sub_nav"></div>
+                            </li>
+                            <li>
+                                <a href="" class="achange">文艺</a>
+                                <div class="line"></div>
+                                <div class="sub_nav"></div>
+                            </li>
+                            <li>
+                                <a href="" class="achange">童书</a>
+                                <div class="line"></div>
+                                <div class="sub_nav"></div>
+                            </li>
+                            <li>
+                                <a href="" class="achange">人文社科</a>
+                                <div class="line"></div>
+                                <div class="sub_nav"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="person-nav">
+        <ol class="breadcrumb center">
+            <li class="breadcrumb-item"><a href="#">首页</a></li>
+            <li class="breadcrumb-item"><a href="#">个人中心</a></li>
+            <li class="breadcrumb-item active">地址管理</li>
+          </ol>
+     </div>
+    <!-- 内容区域 -->
+    <main>
+        <div class="content">
+            <article>
+                <div class="inPic">
+                    <div class="pic">
+                        <a href="#"></a>
+                    </div>
+                    <p><span>[ss***k]</span> <a href="#">[退出登录]</a></p>
+                </div>
+               <div class="personTex">
+        <dl>
+            <dt><a href="#">我的交易</a></dt>
+            <dd> <a href="./html/3-dy-shoppingCart.html">我的购物车</a></dd>
+            <dd><a href="4-userCenter-myOrder.html">我的订单</a></dd>
+            <dd><a href="4-userCenter-comment.html">评价晒单</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">个人中心</a></dt>
+            <dd> <a href="4-userCenter-myCenter.html" >我的中心</a></dd>
+            <dd><a href="4-userCenter-address.html" class="color">地址管理</a></dd>
+        </dl>
+        <dl>
+            <dt><a href="#">账户管理</a></dt>
+            <dd> <a href="4-userCenter-myInfo.html">个人信息</a></dd>
+            <dd><a href="./html/4-userCenter-pswd.html">修改密码</a></dd>
+        </dl>
+  </div>
+            </article>
+            <section>
+               <div class="perSonTop">
+                   <label>收货地址</label>
+               </div> 
+               <div class="perSonBottom">
+                    <div class="perItem">
+                        <div class="file">
+                            <button type="button"  data-toggle="modal" data-target="#myModal">
+                                <i></i>
+                            </button>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                        <form action="#">
+                                            <input type="text" placeholder="姓名">
+                                            <input type="text" placeholder="手机号码">
+                                            <select name="" id="">
+                                                <option value="">省份/自治区</option>
+                                                <option value="">北京市</option>
+                                                <option value="">北京市</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">城市/地区</option>
+                                                <option value="">北京市</option>
+                                                <option value="">重庆市</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">区县</option>
+                                                <option value="">北京市</option>
+                                                <option value="">北京市</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">配送区域</option>
+                                                <option value="">北京市</option>
+                                                <option value="">北京市</option>
+                                            </select>
+                                            <input type="text" class="adress" placeholder="详细地址"> 
+                                            <input type="email" placeholder="邮政编码">
+
+                                            <!-- 模态框底部 -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">保存</button>
+                                                <input type="reset" placeholder="取消">
+                                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button> -->
+                                            </div>
+                                        </form>
+                                    <!-- 模态框头部
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">模态框头部</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                               
+                                   <!-- 模态框主体 --> 
+                                    <!-- <div class="modal-body">
+                                      模态框内容..
+                                    </div> --> 
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+                        <p>添加新地址</p>
+                    </div>
+                    <div class="perItem">
+                        <dl>
+                            <dt>ss***k</dt>
+                            <dd>1573*****666</dd>
+                            <dd>河北省 唐山市 路北区</dd>
+                            <dd>唐山市大学公寓村  （063000）</dd>
+                        </dl>
+                    </div>
+               </div>
+            </section>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-box">
+            <div class="footer-box1">
+                <div class="guid">
+                    <div class="guid-x">
+                        <div class="guid-img1"></div>
+                        <div class="guid-text">7天无理由退货</div>
+                    </div>
+                    <div class="ver-line"></div>
+                    <div class="guid-x">
+                        <div class="guid-img2"></div>
+                        <div class="guid-text">15天免费换货</div>
+                    </div>
+                    <div class="ver-line"></div>
+                    <div class="guid-x">
+                        <div class="guid-img3"></div>
+                        <div class="guid-text">满199包邮</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-box2">
+                <p>BookStore&copy;版权所有</p>
+                <p>违法和不良信息举报电话：400-xxx-xxxx</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

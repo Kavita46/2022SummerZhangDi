@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 模态框（Modal）插件</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/删除.css">
+</head>
+<body>
+<!-- 按钮触发模态框 -->
+<button  id="shanchu" data-toggle="modal" data-target="#myModal">
+	删除
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="box">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					取消
+				</button> -->
+				<h4 class="modal-title" id="myModalLabel">
+					确定要删除该商品吗
+				</h4>
+			</div>
+			<!-- <div class="modal-body">
+				在这里添加一些文本
+			</div> -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" id="queding" data-dismiss="modal">
+				确定
+                </button>
+                <button type="button" class="btn btn-default" id="quxiao" data-dismiss="modal">
+                   取消
+                </button>
+				<!-- <button type="button" class="btn btn-primary">
+					取消
+				</button> -->
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+</body>
+</html>

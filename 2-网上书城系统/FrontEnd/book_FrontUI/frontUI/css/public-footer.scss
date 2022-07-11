@@ -1,0 +1,73 @@
+.footer-box{
+    width: 100%;
+    height: 215px;
+    border-top: 1px solid gray;
+    .footer-box1{
+        width: 80%;
+        height: 115px;
+        // border: 1px solid red;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        .guid{
+            width: 100%;
+            height: 53px;
+            // border: 1px solid blue;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .guid-x{
+                width: 175px;
+                height: 53px;
+                // border: 1px solid blue;
+                display: flex;
+                [class*=guid-img]{
+                    width: 53px;
+                    height: 53px;
+                    // border: 1px solid red;
+                }
+                .guid-img1{
+                    background: url(../imgs/foot1.png) no-repeat center/contain;
+                }
+                .guid-img2{
+                    background: url(../imgs/foot2.png) no-repeat center/contain;
+                }
+                .guid-img3{
+                    background: url(../imgs/foot3.png) no-repeat center/contain;
+                }
+                .guid-img4{
+                    background: url(../imgs/foot4.png) no-repeat center/contain;
+                }
+                .guid-text{
+                    width: 122px;
+                    height: 53px;
+                    // border: 1px solid red;
+                    font-size: 16px;
+                    line-height: 48px;
+                    text-align: center;
+                }
+            }
+            .ver-line{
+                width: 1px;
+                height: 100%;
+                background-color: gray;
+            }
+        }
+    }
+    .footer-box2{
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        // border: 1px solid red;
+        margin: 0 auto;
+        overflow: hidden;
+        p{
+            height: 22px;
+            color: white;
+            text-align: center;
+        }
+        p:nth-child(1){
+            margin-top: 30px;
+        }
+    }
+  }

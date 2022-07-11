@@ -1,0 +1,239 @@
+.header-box{
+    width: 100%;
+    height: 127px;
+    border-bottom: 1px solid black;
+    .header{
+        width: 90%;
+        margin: 0 auto;
+        height: 127px;
+        // border: 1px solid red;
+        .h-module1{
+            width: 100%;
+            height: 102px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            // border: 1px solid red;
+            .left-logo{
+                width: 220px;
+                height: 100%;
+                // border: 1px solid black; 
+                background: url(../img/logo.png) no-repeat center/contain;
+            }
+            .right-login{
+                width: 600px;
+                height: 100%;
+                // border: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .login-a{
+                    width: 100px;
+                    height: 23px;
+                    // border: 1px solid red;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        // border: 1px solid red;
+                    }
+                    .vline{
+                        display: inline-block;
+                        width: 0.5px;
+                        height: 12px;
+                        background-color: gray;
+                        margin: 0 8px;
+                    }
+                }
+                input{
+                    margin-left: 30px;
+                    width: 230px;
+                    height: 30px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                    background: url(../img/ss.png) no-repeat right/contain;
+                }
+                .user{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/grzx.png) no-repeat center/contain;
+                    margin-left: 20px;
+                }
+                .QRcode{
+                    position: relative;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/ewm.png) no-repeat center/contain;
+                    margin-left: 20px;
+                    &:hover .QRcode-img{
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid red;
+                        top: 38px;
+                        left: -7px;
+                        background: url(../img/smewm.png) no-repeat center/contain;
+                        &::before{
+                            position: absolute;
+                            top: -5px;
+                            left: 12px;
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-bottom: 5px solid red;
+                        }
+                    }
+                }
+                .shopping-card{
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/gt1.png) no-repeat center/contain;
+                    margin-left: 20px;
+                }
+            }
+            @media screen and (min-width:900px) {
+                .left-logo{
+                    margin-left: 30px;
+                }
+            }
+            @media screen and (max-width:900px) {
+                .left-logo{
+                    margin-left: 0;
+                    flex-shrink: 0;
+                }
+                .right-login{
+                    .login-a{
+                        .vline{
+                            margin: 0 1px;
+                        }
+                    }
+                    input{
+                        margin-left: 1px;
+                    }
+                } 
+            }
+        }
+        .h-module2{
+            width: 100%;
+            height: 25px;
+            @media screen and (min-width:900px){
+                .list-nav{
+                    width: 60%;
+                    height: 25px;
+                    // border: 1px solid red;
+                    margin: 0 auto;
+                }
+            }
+            @media screen and (max-width:900px){
+                .list-nav{
+                    width: 100%;
+                    height: 25px;
+                    // border: 1px solid red;
+                    margin: 0 auto;
+                }
+            }
+            .list-nav{
+                ul{
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        list-style: none;
+                        width: 80px;
+                        text-align: center;
+                        .achange{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        .line{
+                            width: 100%;
+                            height: 2px;
+                            background-color: red;
+                            transform: scale(0);
+                            transition: all 1s;
+                        }
+                        &:hover .line{
+                            transform: scale(1);
+                        }
+                        &:hover .achange{
+                            color: red;
+                        }
+                        .sub_nav1{
+                            position: absolute;
+                            width: 100%;
+                            height: 0px;
+                            // background-color: white;
+                            left: 0;
+                            top: 130px;
+                            display: flex;
+                            justify-content: space-around;
+                            transition: all 1s;
+                            overflow: hidden;
+                            background-color: white;
+                            .achange2{
+                                text-decoration: none;
+                                color: black;
+                            }
+                            .sn_icon{
+                                width: 200px;
+                                height: 100%;
+                                // border: 1px solid green;
+                                text-align: center;
+                                div{
+                                    width: 162px;
+                                    height: 200px;
+                                    margin: 20px auto;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+    
+                        }
+                        &:hover .sub_nav1{
+                            position: absolute;
+                            width: 100%;
+                            height: 280px;
+                            left: 0;
+                            top: 130px;
+                            display: flex;
+                            justify-content: space-around;
+                            border-bottom: 1px solid gray;
+                        }
+                        .sub_nav2{
+                            position: absolute;
+                            width: 100%;
+                            height: 0px;
+                            // background-color: white;
+                            left: 0;
+                            top: 130px;
+                            transition: all 1s;
+                            overflow: hidden;
+                            background-color: white;
+                            .achange3{
+                                text-decoration: none;
+                                color: black;
+                                margin-left: 40px;
+                                line-height: 40px;
+                            }
+                        }
+                        &:hover .sub_nav2{
+                            position: absolute;
+                            width: 100%;
+                            height: 40px;
+                            left: 0;
+                            top: 130px;
+                            border-bottom: 1px solid gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

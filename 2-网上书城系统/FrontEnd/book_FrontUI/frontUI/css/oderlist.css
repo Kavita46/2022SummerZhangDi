@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+h5{
+    margin-left: 50px;
+}
+table{
+    margin: auto;
+    border: 1px solid #cccc;
+    width: 90%;
+    height: 438px;
+    border-top: 4px solid #bc0108;
+    border-radius: 5px;
+}
+table tr{
+    width: 100%;
+    border: 1px solid #cccc;
+    height: 70px;
+}
+table tr:last-child td{
+    text-align: center;
+}
+table tr input,select{
+    width: 180px;
+    height: 38px;
+}
+table tr button{
+    width: 80px;
+    height: 38px;
+    margin-left: 10px;
+    outline: none;
+    border: 0px;
+}
+table tr button:first-child{
+    background-color:#bc0108 ;
+    color: white;
+
+}
+.two{
+    border: 1px solid #cccc;
+    width:90%;
+    margin: 0 auto;
+    height: 388px;
+    margin-top: 40px;
+    border-top: 4px solid #bc0108;
+}
+.two a{
+    color: #ccc;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.two a:first-child{
+    color: #bc0108;
+}
+.two a:last-child{
+    border: 0px;
+}
+.two tr:last-child td{
+    text-align: left;
+}
+.two tr:nth-child(2){
+    color: #bc0108;
+}
+.two tr button:nth-child(2){
+    background-color:#bc0108 ;
+    color: white;
+
+}
+.two tr td i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/temp/check.jpg);
+}

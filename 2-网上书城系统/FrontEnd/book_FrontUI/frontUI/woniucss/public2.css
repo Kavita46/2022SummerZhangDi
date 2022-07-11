@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  ul li{
+    list-style: none;
+}
+@font-face {
+  font-family: "icon";
+  src: url("../fonts/icomoon.eot");
+  src:url("../fonts/icomoon.svg");
+  src: url("../fonts/icomoon.ttf");
+  src: url("../fonts/icomoon.woff");
+  font-weight: normal;
+  font-style: normal;
+  
+}
+.icon{
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing:grayscale;
+
+}
+  /*头部  */
+  header {
+    width: 100%;
+    height: 180px;
+    border: 1px solid red;
+  }
+  
+  .center {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  /* 内容区域 */
+  main {
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  
+  main .content {
+    width: 80%;
+    margin: 0px auto;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  /* 个人中心侧边导航栏 */
+  main .content article {
+    width: 204px;
+    height: 615px;
+    border: 1px solid #d3d3d3;
+    margin-right: 40px;
+  }
+  
+  main .content article .inPic {
+    width: 100%;
+    height: 190px;
+    border-bottom: 1px solid #c30000;
+  }
+  
+  main .content article .inPic .pic {
+    width: 100%;
+    height: 134px;
+  }
+  
+  main .content article .inPic .pic a {
+    margin: 0px auto;
+    margin-top: 10px;
+    display: block;
+    height: 122px;
+    width: 122px;
+    background: url(../imgs/唐老鸭.png) no-repeat center/cover;
+  }
+  
+  main .content article .inPic p {
+    line-height: 58px;
+    text-align: center;
+    font-size: 14px;
+    color: #23527c;
+  }
+  
+  main .content article .inPic p a {
+    color: #23527c;
+    text-decoration: none;
+  }
+  
+  main .content article .personTex {
+    width: 100%;
+    text-align: center;
+  }
+  
+  main .content article .personTex .color {
+    color: red;
+  }
+  
+  main .content article .personTex dl {
+    margin: 0px;
+  }
+  
+  main .content article .personTex dl dt {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+  }
+  
+  main .content article .personTex dl dt a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  main .content article .personTex dl dd {
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0px;
+  }
+  
+  main .content article .personTex dl dd a {
+    color: #626262;
+    text-decoration: none;
+  }
+  /* 左侧内容区域上边部分 */
+  main .content section {
+    width: 800px;
+    height: 522px;
+    padding: 20px 30px 0px 30px;
+    box-sizing: border-box;
+    border: 1px solid #d3d3d3;
+    margin-right:  200px;
+  }
+  
+  main .content section .perSonTop {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d3d3d3;
+    line-height: 80px;
+  } 
+  main .content section .perSonTop label {
+    font-size: 18px;
+    color: #000000;
+  }
+  /* 底部 */
+  footer {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+  }
+  
+  .person-nav{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #d3d3d3;
+    line-height: 42px;
+}
