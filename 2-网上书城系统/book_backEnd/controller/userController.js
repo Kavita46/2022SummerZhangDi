@@ -19,6 +19,7 @@ async function register(req, res, next) {
 // TODO 大括号解离
 // TODO: 三个点 ...
 // TODO map和forEach的区别
+
 async function login(req, res, next) {
   const { username, password } = req.query;
   // userModel.create({username, password});
@@ -40,9 +41,7 @@ async function login(req, res, next) {
     // BUG 登录失败的时候这个202进入不了
     res.send({ code: 202 })
   }
-
 }
-
 // 从token获取用户信息
 async function getUserInfo(req, res) {
   const token_o = req.get('Authorization');

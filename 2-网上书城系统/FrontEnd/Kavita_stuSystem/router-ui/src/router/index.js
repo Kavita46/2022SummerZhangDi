@@ -15,7 +15,6 @@ const routes = [
   {
     path: '/student',
     component: Student,
-
     beforeEnter: (to, from, next) => {
       // reject the navigation
       // 身份不对,拒绝导航

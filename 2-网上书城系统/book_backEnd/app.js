@@ -23,7 +23,6 @@ var bookRouter = require('./routes/books')
 var orderRouter = require('./routes/orders')
 
 const jwt = require('express-jwt');
-
 const jwtAuth = require("./utils/jwtAuth.js");
 
 var app = express();

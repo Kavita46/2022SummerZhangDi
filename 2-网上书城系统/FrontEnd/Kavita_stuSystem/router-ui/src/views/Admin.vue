@@ -9,23 +9,26 @@
             <span style="position: absolute; top: 0; left: 200px; color: red"
               >欢迎{{ user.username }}用户,身份为管理员</span
             >
-
             <!-- <span> vuex的数据{{ user }}</span> -->
             <!-- <span style="color: blue">学生管理系统</span> -->
           </div>
         </template>
       </el-header>
+
       <el-container>
         <el-aside width="150px">
           <Aside></Aside>
         </el-aside>
+
         <el-main>
           <h1>网络书城后台管理系统(管理员端)</h1>
 
           <el-button @click="quit">注销</el-button>
           <BreadCrumb></BreadCrumb>
           <br />
+          
           <router-view></router-view>
+
         </el-main>
       </el-container>
     </el-container>
