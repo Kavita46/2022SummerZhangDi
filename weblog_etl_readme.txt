@@ -1,7 +1,0 @@
-weblog_etl是对apache点击流日志清洗的代码
-
-rownum自定义UDF的方式将其实现
-
-etl_clickstream.py文件，用于通过Python调用jar文件，相关依赖在BookShopBI文件夹中。
-
-详细readme在各项目文件夹内。

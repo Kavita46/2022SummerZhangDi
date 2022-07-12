@@ -5,7 +5,6 @@ import store from './store'
 import api from '../src/http/api'
 import myDirective from './directives/privilege'
 import vueLazyload from 'vue-lazyload'
-// import urlUtils from '../src/utils/urlUtil'
 import urlUtil from '../src/utils/urlUtils'
 
 Vue.prototype.api = api
