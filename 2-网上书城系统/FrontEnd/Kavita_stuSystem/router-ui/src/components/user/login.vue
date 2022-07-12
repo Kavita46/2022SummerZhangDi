@@ -138,7 +138,7 @@ export default {
       console.log(JSON.parse(localStorage.getItem('vuex')).user.role);
       let role = JSON.parse(localStorage.getItem('vuex')).user.role;
       // console.log(typeof(role))
-      this.$router.push("/" + admin);
+      this.$router.push("/" + 'admin');
     }
   },
 };
