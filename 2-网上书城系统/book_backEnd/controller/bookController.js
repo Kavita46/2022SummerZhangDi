@@ -6,6 +6,9 @@ async function getBooks(req, res, next) {
     res.send({ result });
 }
 
+// 修改,写一个EditBook ,   删除 deleteBook,  getBookById(id)
+
+
 // 2-删除单个书籍函数
 // async function deleteBook(req, res, next) {
 //     // Promise MongoDB操作数据库 是异步操作,用await等待, await又需要用async
