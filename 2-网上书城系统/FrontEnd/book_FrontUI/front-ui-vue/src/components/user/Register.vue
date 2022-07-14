@@ -1,0 +1,58 @@
+<!-- 我的页面 -->
+<template>
+   <main>
+    <div class="content">
+        <div class="logo">
+            <img src="images/logo1.png" alt="logo">
+        </div>
+        <form action="1-zh-login.html">
+            <ul>
+                <li>用户注册</li>
+                <li>
+                    <input type="text" placeholder="昵称/邮箱/用户名">
+                </li>
+                <li>
+                    <input type="password" placeholder="密码">
+                </li>
+                <li>
+                    <input type="password" placeholder="再次输入密码">
+                </li>
+                <li>
+                    <input type="text" placeholder="验证码">
+                    <span></span>
+                </li>
+                <li>
+                    <input type="submit" value="注册">
+                </li>
+                <li>
+                    完成此注册，即表明您同意了我们的
+                    <a href="#">《使用条款和隐私策略》</a>   
+                </li>
+            <li>
+                <a href="1-zh-login.html">已有账号登录</a>   
+            </li>
+            </ul>
+
+        </form>
+    </div>
+   </main> 
+</template>
+
+<script>
+
+export default {
+  components: {},
+  data () {
+    return {
+
+    }
+  },
+  computed: {},
+  watch: {},
+  methods: {
+
+  },
+}
+</script>
+
+<style  rel="stylesheet/scss" lang="scss" scoped src='../../static/scss/login.scss'></style>

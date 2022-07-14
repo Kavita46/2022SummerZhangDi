@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header-box {
@@ -23,22 +24,32 @@
   width: 100%;
   height: 102px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-box .header .h-module1 .left-logo {
   width: 220px;
   height: 100%;
-  background: url(../imgs/logo1.png) no-repeat center/contain;
+  background: url(../imgs/logo.png) no-repeat center/contain;
 }
 
 .header-box .header .h-module1 .right-login {
   width: 600px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-box .header .h-module1 .right-login .login-a {
@@ -125,7 +136,8 @@
 @media screen and (max-width: 900px) {
   .header-box .header .h-module1 .left-logo {
     margin-left: 0;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .header-box .header .h-module1 .right-login .login-a .vline {
     margin: 0 1px;
@@ -158,8 +170,11 @@
 
 .header-box .header .h-module2 .list-nav ul {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header-box .header .h-module2 .list-nav ul li {
@@ -177,12 +192,15 @@
   width: 100%;
   height: 2px;
   background-color: red;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .header-box .header .h-module2 .list-nav ul li:hover .line {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .header-box .header .h-module2 .list-nav ul li:hover .achange {
@@ -195,8 +213,12 @@
   height: 0px;
   left: 0;
   top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 1s;
   transition: all 1s;
   overflow: hidden;
   background-color: white;
@@ -230,8 +252,11 @@
   height: 280px;
   left: 0;
   top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-bottom: 1px solid gray;
 }
 
@@ -241,6 +266,7 @@
   height: 0px;
   left: 0;
   top: 130px;
+  -webkit-transition: all 1s;
   transition: all 1s;
   overflow: hidden;
   background-color: white;
@@ -266,6 +292,8 @@
   width: 100%;
   height: 57px;
   line-height: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -313,10 +341,17 @@
 .containe .box1 .box2 {
   width: 100%;
   height: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .containe .box1 .box2 .item {
@@ -356,9 +391,14 @@
 .containe .box2 {
   width: 100%;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .containe .box2 > p {
@@ -407,6 +447,8 @@ body {
 .right .box1 {
   width: 100%;
   height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #f5f5f5;
 }
@@ -444,6 +486,8 @@ body {
 .right .box2 {
   width: 100%;
   height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   font-size: 12px;
@@ -463,6 +507,8 @@ body {
 .right .box3 {
   width: 100%;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   line-height: 70px;
 }
@@ -496,21 +542,31 @@ body {
   width: 80%;
   height: 115px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-box .footer-box1 .guid {
   width: 100%;
   height: 53px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-box .footer-box1 .guid .guid-x {
   width: 175px;
   height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -604,6 +660,7 @@ body {
   font-size: 10px;
   line-height: 20px;
   opacity: 1;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -621,6 +678,7 @@ body {
   color: white;
   text-align: center;
   opacity: 0;
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -643,6 +701,7 @@ body {
   background-color: red;
   color: white;
   text-align: center;
+  -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
 }
@@ -663,6 +722,7 @@ body {
   font-size: 14px;
   line-height: 40px;
   border: 2px solid red;
+  -webkit-transition: 2s;
   transition: 2s;
   opacity: 0;
 }
@@ -700,9 +760,11 @@ body {
   color: white;
   text-align: center;
   opacity: 0;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .sidebar a .icon_side3:hover::after {
   opacity: 1;
 }
+/*# sourceMappingURL=确认订单.css.map */

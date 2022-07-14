@@ -16,15 +16,20 @@ header {
 main {
   width: 100%;
   padding-top: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .content {
   width: 80%;
   margin: 0px auto;
   height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .content article {
@@ -108,7 +113,8 @@ main .content section {
   width: 800px;
   height: 370px;
   padding: 20px 30px 0px 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #d3d3d3;
 }
 
@@ -126,8 +132,12 @@ main .content section .perSonTop label {
 
 main .content section .perSonBottom {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main .content section .perSonBottom .perItem {
@@ -161,7 +171,8 @@ main .content section .perSonBottom .perItem:nth-child(1) .file .modal .modal-co
   width: 500px;
   height: 550px;
   padding: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: auto;
 }
 
@@ -225,7 +236,8 @@ main .content section .perSonBottom .perItem:nth-child(1) p {
 
 main .content section .perSonBottom .perItem:nth-child(2) {
   padding: 20px 0px 0px 25px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main .content section .perSonBottom .perItem:nth-child(2) dt {
@@ -244,3 +256,4 @@ footer {
   width: 100%;
   height: 200px;
 }
+/*# sourceMappingURL=perInduceFour.css.map */

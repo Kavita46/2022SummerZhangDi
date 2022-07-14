@@ -1,0 +1,277 @@
+<!-- 我的页面 -->
+<template>
+  <body>
+    <div class="header-box">
+      <div class="header">
+        <div class="h-module1">
+          <div class="left-logo"></div>
+          <div class="right-login">
+            <div class="login-a">
+              <a href="../1-zh-login.html">登录</a>
+              <div class="vline"></div>
+              <a href="../1-zh-register.html">注册</a>
+            </div>
+            <input type="text" placeholder="热门搜索：小王子" maxlength="16" />
+            <a href="../4-userCenter-myCenter.html" class="user"></a>
+            <a href="" class="QRcode">
+              <div class="QRcode-img"></div>
+            </a>
+            <a href="3-dy-shoppingCart.html" class="shopping-card"></a>
+          </div>
+        </div>
+        <div class="h-module2">
+          <div class="list-nav">
+            <ul>
+              <li>
+                <a href="../2-index.html" class="achange">首页</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="../2-index.html" class="achange">所有图书</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="../2-bottles.html" class="achange">教育</a>
+                <div class="line"></div>
+              </li>
+              <li>
+                <a href="../2-flowers.html" class="achange">小说</a>
+                <div class="line"></div>
+                <div class="sub_nav"></div>
+              </li>
+              <li>
+                <a href="../2-index.html" class="achange">文艺</a>
+                <div class="line"></div>
+                <div class="sub_nav"></div>
+              </li>
+              <li>
+                <a href="" class="achange">童书</a>
+                <div class="line"></div>
+                <div class="sub_nav"></div>
+              </li>
+              <li>
+                <a href="" class="achange">人文社科</a>
+                <div class="line"></div>
+                <div class="sub_nav"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details-box">
+      <div class="box-left">
+        <div class="enlarge"></div>
+        <div class="narrow">
+          <div class="nar-photo">
+            <img src="../imgs/s111.jpg" alt="" />
+            <div class="pr1"><img src="../imgs/s111.jpg" alt="" /></div>
+          </div>
+          <div class="nar-photo">
+            <img src="../imgs/s111.jpg" alt="" />
+            <div class="pr2"><img src="../imgs/s111.jpg" alt="" /></div>
+          </div>
+          <div class="nar-photo">
+            <img src="../imgs/s111.jpg" alt="" />
+            <div class="pr3"><img src="../imgs/s111.jpg" alt="" /></div>
+          </div>
+          <div class="nar-photo">
+            <img src="../imgs/s111.jpg" alt="" />
+            <div class="pr4"><img src="../imgs/s111.jpg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="box-right">
+        <div class="r-info">
+          <h3>《少年读史记》</h3>
+          <p>
+            精巧32开本。荣获第六届中华优秀出版物奖
+            ；史学、文学、哲学、国学一次到位，台湾著名儿童文学作家张嘉骅倾力打造更适合孩子阅读的《史记》！
+          </p>
+          <h4>￥59.90</h4>
+        </div>
+        <div class="color-class">
+          <div class="font-div">
+            <font>数量 库存</font><font>2096</font><font>件</font>
+          </div>
+          <div class="num-change">
+            <div class="n-c">+</div>
+            <div>1</div>
+            <div class="n-c">-</div>
+          </div>
+        </div>
+        <div class="r-btn">
+          <router-link
+            to="/order/orderConfirm"
+            tag="button"
+            replace
+            active-class="laozhang"
+            >立即购买</router-link
+          >
+
+          <!-- <a href="3-kgl-orderConfirm.html">立即购买</a> -->
+          <a href="">加入购物车</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container1">
+        <div class="title1">
+          <ul>
+            <li class="li1"><a href="2-details-page1.html"> 商品详情</a></li>
+            <li><a href="2-details-page2.html">所有评价</a></li>
+          </ul>
+        </div>
+        <div class="ph1">
+          <img src="../imgs/proDet1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <p>为你推荐</p>
+        <div class="box">
+          <div class="ph2">
+            <img src="../imgs/s111.jpg" alt="" />
+          </div>
+          <p>【最家】复古文艺风玻璃花瓶</p>
+          <p>￥193.20</p>
+        </div>
+        <div class="box">
+          <div class="ph2">
+            <img src="" alt="" />
+          </div>
+          <p>【最家】复古文艺风玻璃花瓶</p>
+          <p>￥193.20</p>
+        </div>
+        <div class="box">
+          <div class="ph2">
+            <img src="" alt="" />
+          </div>
+          <p>【最家】复古文艺风玻璃花瓶</p>
+          <p>￥193.20</p>
+        </div>
+        <div class="box">
+          <div class="ph2">
+            <img src="" alt="" />
+          </div>
+          <p>【最家】复古文艺风玻璃花瓶</p>
+          <p>￥193.20</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="background">
+      <!-- 倒计时组件 -->
+
+      <span class="guess">猜你喜欢</span>
+      <!-- 轮播图组件 -->
+
+      <!-- <div class="slick">
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s111.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s222.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s333.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s444.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s555.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s111.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s222.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s333.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s444.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+        <div class="item-box">
+          <img class="item-2" src="../imgs/s555.jpg" />
+          <div class="text-box">
+            <div class="h1">【最家】复古文艺风玻璃花瓶</div>
+            <div class="h2">$688.00</div>
+          </div>
+        </div>
+      </div> -->
+      <!-- 轮播图组件 -->
+    </div>
+
+    <div class="sidebar">
+      <a href="">
+        <div class="icon_side1"></div>
+      </a>
+      <a href="">
+        <div class="icon_side2">
+          <div class="tel-box">400-xxx-xxxx</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="icon_side3"></div>
+      </a>
+    </div>
+  </body>
+</template>
+
+<script>
+
+export default {
+  components: {},
+  data() {
+    return {
+
+    }
+  },
+  computed: {},
+  watch: {},
+  methods: {
+
+  },
+}
+</script>
+
+<style rel = 'stylesheet/scss' lang = 'scss' scoped src = '../../static/scss/details-page1.scss'></style> <

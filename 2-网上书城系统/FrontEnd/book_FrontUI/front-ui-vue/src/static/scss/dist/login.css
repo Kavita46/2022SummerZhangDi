@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/login/bg_login.jpg) no-repeat center/cover;
+}
+main .content {
+  width: 464px;
+  height: 365px;
+  border: 1px solid #d6d6d6;
+  position: absolute;
+  top: 100px;
+  right: 125px;
+}
+main .content .logo {
+  width: 100%;
+  height: 88px;
+  border-bottom: 1px solid #d6d6d6;
+}
+main .content .logo img {
+  width: 123px;
+  height: 42px;
+  margin: 21px 172px;
+}
+main .content form {
+  width: 100%;
+  position: relative;
+}
+main .content form input {
+  width: 256px;
+  height: 42px;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  margin: 15px 0px 0px 104px;
+}
+main .content form input::placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+}
+main .content form input:first-child {
+  height: 30px;
+  border-radius: 0px;
+  border: 1px solid #f7cda4;
+}
+main .content form input:first-child::placeholder {
+  font-size: 12px;
+}
+main .content form input:nth-child(4) {
+  background-color: #c20000;
+  color: white;
+}
+main .content form .bottom {
+  margin-top: 15px;
+  position: absolute;
+  bottom: -30px;
+  right: 94px;
+}
+main .content form .bottom a {
+  color: #000000;
+  font-size: 12px;
+  margin-left: 10px;
+}

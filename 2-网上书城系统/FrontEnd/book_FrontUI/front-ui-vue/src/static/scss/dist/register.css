@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/login/bg_register.jpg) no-repeat center/cover;
+}
+main .content {
+  width: 464px;
+  height: 515px;
+  border: 1px solid #d6d6d6;
+  position: absolute;
+  top: 80px;
+  right: 125px;
+}
+main .content .logo {
+  width: 100%;
+  height: 88px;
+  border-bottom: 1px solid #d6d6d6;
+}
+main .content .logo img {
+  width: 123px;
+  height: 42px;
+  margin: 21px 172px;
+}
+main .content form {
+  width: 100%;
+  position: relative;
+  padding: 0px 104px 0px 104px;
+  box-sizing: border-box;
+}
+main .content form li {
+  width: 256px;
+  height: 42px;
+  margin-bottom: 16px;
+  position: relative;
+  font-size: 12px;
+  color: #333;
+}
+main .content form li input {
+  width: 256px;
+  height: 42px;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+main .content form li input::placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+}
+main .content form li:first-child {
+  margin-bottom: 0px;
+  line-height: 42px;
+  text-align: center;
+}
+main .content form li:nth-child(5) input {
+  width: 185px;
+  height: 42px;
+}
+main .content form li:nth-child(5) span {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 60px;
+  height: 24px;
+  background: url(../images/temp/code.jpg) no-repeat center/contain;
+}
+main .content form li:nth-child(6) input {
+  background-color: #c00000;
+  color: #fff;
+}
+main .content form li:nth-child(7) a {
+  color: #c00000;
+}
+main .content form li:nth-child(8) a {
+  margin-left: 180px;
+}

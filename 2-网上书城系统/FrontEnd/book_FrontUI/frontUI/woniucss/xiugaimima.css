@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
   width: 589px;
   height: 400px;
   background-color: #ffffff;
-  /* border: solid 1px red; */
+  border: solid 1px red;
 }
 
 .container button {
@@ -16,7 +17,7 @@
   height: 32px;
   background-color: #d60000;
   margin-left: 200px;
-  margin-top: 350px;
+  margin-top: 0px;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -26,7 +27,7 @@
 .container .left {
   width: 145px;
   height: 263px;
-  /* border: springgreen 1px solid; */
+  border: springgreen 1px solid;
   text-align: right;
   float: left;
   font-family: MicrosoftYaHei;
@@ -56,11 +57,9 @@
 .container .right {
   width: 439px;
   height: 351px;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   float: left;
   overflow: hidden;
-  position: absolute;
- margin-left: 180px;
 }
 
 .container .right ul li:nth-child(2) input {
@@ -136,16 +135,14 @@
 
 .container .right .word {
   position: absolute;
-  left: 24px;
+  left: 168px;
   top: 0;
   font-size: 14px;
 }
 
 .container .right .box2 {
-  width: 100px;
   position: absolute;
-  left: 103px;
-  /* border: #d60000 1px solid; */
+  left: 239px;
 }
 
 .container .right .word2 {
@@ -153,3 +150,4 @@
   left: 19px;
   white-space: nowrap;
 }
+/*# sourceMappingURL=xiugaimima.css.map */

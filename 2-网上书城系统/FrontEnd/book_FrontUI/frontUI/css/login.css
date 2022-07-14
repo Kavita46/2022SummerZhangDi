@@ -49,6 +49,21 @@ main .content form input {
   margin: 15px 0px 0px 104px;
 }
 
+main .content form input::-webkit-input-placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+main .content form input:-ms-input-placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+main .content form input::-ms-input-placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
 main .content form input::placeholder {
   font-size: 14px;
   padding-left: 10px;
@@ -58,6 +73,18 @@ main .content form input:first-child {
   height: 30px;
   border-radius: 0px;
   border: 1px solid #f7cda4;
+}
+
+main .content form input:first-child::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+main .content form input:first-child:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+main .content form input:first-child::-ms-input-placeholder {
+  font-size: 12px;
 }
 
 main .content form input:first-child::placeholder {
@@ -81,3 +108,4 @@ main .content form .bottom a {
   font-size: 12px;
   margin-left: 10px;
 }
+/*# sourceMappingURL=login.css.map */

@@ -87,6 +87,8 @@ main .content section {
 
 main .content section .information {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -137,3 +139,4 @@ footer {
   height: 200px;
   border: 1px solid red;
 }
+/*# sourceMappingURL=personInduceFive.css.map */

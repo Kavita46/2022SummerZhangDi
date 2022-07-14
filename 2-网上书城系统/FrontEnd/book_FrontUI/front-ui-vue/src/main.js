@@ -7,22 +7,22 @@ import store from './store'
 import api from '../src/http/api'
 
 // 懒加载考虑使用
-import vueLazyload from 'vue-lazyload'
+// import vueLazyload from 'vue-lazyload'
 
 // 注册全局api和util
 Vue.prototype.api = api
-Vue.prototype.$urlUtil= urlUtil
+// Vue.prototype.$urlUtil= urlUtil
 
 // 导入Element
 import './plugins/element.js'
 
 // 懒加载设置
-Vue.use(vueLazyload, {
-  // 配置默认图
-  loading:require('../src/assets/loading.gif'),
-  throttleWait:3000
-  // 配置加载持续时间
-})
+// Vue.use(vueLazyload, {
+//   // 配置默认图
+//   loading:require('../src/assets/loading.gif'),
+//   throttleWait:3000
+//   // 配置加载持续时间
+// })
 
 Vue.config.productionTip = false
 

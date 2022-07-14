@@ -85,7 +85,8 @@ main .content section {
   width: 800px;
   height: 435px;
   padding: 20px 30px 0px 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #d3d3d3;
 }
 
@@ -103,6 +104,8 @@ main .content section .perSonTop label {
 
 main .content section .information {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -153,3 +156,4 @@ footer {
   height: 200px;
   border: 1px solid red;
 }
+/*# sourceMappingURL=personInduceFive.css.map */

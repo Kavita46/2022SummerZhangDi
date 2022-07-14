@@ -1,0 +1,175 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+}
+
+.center {
+  width: 80%;
+  margin: 0px auto;
+}
+
+main {
+  width: 100%;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+main .content {
+  width: 80%;
+  margin: 0px auto;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+main .content article {
+  width: 204px;
+  height: 615px;
+  border: 1px solid #d3d3d3;
+  margin-right: 40px;
+}
+main .content article .inPic {
+  width: 100%;
+  height: 190px;
+  border-bottom: 1px solid #c30000;
+}
+main .content article .inPic .pic {
+  width: 100%;
+  height: 134px;
+}
+main .content article .inPic .pic a {
+  margin: 0px auto;
+  margin-top: 10px;
+  display: block;
+  height: 122px;
+  width: 122px;
+  background: url(../imgs/唐老鸭.png) no-repeat center/cover;
+}
+main .content article .inPic p {
+  line-height: 58px;
+  text-align: center;
+  font-size: 14px;
+  color: #23527c;
+}
+main .content article .inPic p a {
+  color: #23527c;
+  text-decoration: none;
+}
+main .content article .personTex {
+  width: 100%;
+  text-align: center;
+}
+main .content article .personTex .color {
+  color: red;
+}
+main .content article .personTex dl {
+  margin: 0px;
+}
+main .content article .personTex dl dt {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+}
+main .content article .personTex dl dt a {
+  color: #000000;
+  text-decoration: none;
+}
+main .content article .personTex dl dd {
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+  margin: 0px;
+}
+main .content article .personTex dl dd a {
+  color: #626262;
+  text-decoration: none;
+}
+main .content section {
+  width: 800px;
+  height: 546px;
+  padding: 50px 30px 0px 30px;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+}
+main .content section .container .first {
+  height: 130px;
+  line-height: 130px;
+  border-bottom: 1px solid #d3d3d3;
+}
+main .content section .container .first .perLeft i {
+  margin-top: 15px;
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  background: url(../imgs/唐老鸭.png) no-repeat center/cover;
+}
+main .content section .container .first .perLeft i::after {
+  content: "ss***k";
+  font-style: normal;
+  position: absolute;
+  top: -35px;
+  left: 110px;
+}
+main .content section .container .first .perRight {
+  text-align: right;
+}
+main .content section .container .payContent {
+  height: 182px;
+}
+main .content section .container .payContent .payItem {
+  display: flex;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+main .content section .container .payContent .payItem .img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background: url(../imgs/gxin1.jpg) no-repeat center/cover;
+}
+main .content section .container .payContent .payItem .info {
+  font-size: 14px;
+  color: #686868;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+main .content section .container .payContent .payItem .info a {
+  color: #686868;
+}
+main .content section .container .payContent .payItem .info p {
+  margin: 0px;
+}
+main .content section .container .payContent .payItem .info .color {
+  color: red;
+}
+main .content section .container .payContent .payItem:nth-child(2) .img {
+  background: url(../imgs/gxin2.jpg) no-repeat center/cover;
+}
+main .content section .container .payContent .payItem .img2 {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background: url(../imgs/gxin3.jpg) no-repeat center/cover;
+}
+main .content section .container .payContent .payItem .img3 {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  background: url(../imgs/gxin4.jpg) no-repeat center/cover;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  margin-top: 500px;
+}

@@ -1,0 +1,126 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // 购物车栏
+  .cart {
+    height: 57px;
+    width: 100%;
+    .message {
+      // margin-top: 20px;
+      margin-left:380px;
+      color:gray;
+  
+    }
+    .cart-pic {
+      background: url(../imgs/cartTop03.png) no-repeat center/100%;
+  
+      width: 446px;
+      height: 22px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+  
+  // 倒计时和轮播图
+  .background {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    // 倒计时盒子
+    .container {
+      text-align: center;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 54px;
+      // border:1px solid red;
+      #show {
+        font-size: 20px;
+        text-align: center;
+        color: red;
+      }
+    }
+  
+    .back-link {
+      margin-top: 20px;
+      font-size: 15px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .guess {
+      font-size: 20px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      margin-top: 80px;
+    }
+  
+    // 轮播图盒子
+    .slick {
+      position: absolute;
+      // margin: 0 auto;
+      bottom: 0;
+      left: 100px;
+      width: 1200px;
+      height: 320px;
+      // padding-left:10px;
+      // padding-right:10px;
+  
+      .item-box {
+        width: 216px;
+        height: 320px;
+  
+        margin-left: 10px;
+        margin-right: 10px;
+  
+        .item-2 {
+          width: 216px;
+          height: 216px;
+        }
+        // 文本框
+        .text-box {
+          height: 104px;
+          width: 215px;
+          position: relative;
+  
+          .h1 {
+            position: absolute;
+            top: 19px;
+            left: 6px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.3px;
+          }
+          .h2 {
+            position: absolute;
+            bottom: 0px;
+            left: 3px;
+  
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            line-height: 15px;
+            color: #a10000;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  

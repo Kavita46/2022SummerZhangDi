@@ -24,7 +24,7 @@ main {
 }
 
 main .content {
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
   height: 700px;
   display: flex;
@@ -32,7 +32,7 @@ main .content {
 }
 
 main .content article {
-  width: 204px;
+  width: 100px;
   height: 615px;
   border: 1px solid #d3d3d3;
   margin-right: 40px;
@@ -109,7 +109,7 @@ main .content article .personTex dl dd a {
 }
 
 main .content section {
-  width: 800px;
+  width: 300px;
   height: 546px;
   padding: 50px 30px 0px 30px;
   box-sizing: border-box;
